@@ -1,0 +1,104 @@
+@import url('utilities.css');
+
+.restrict-query-links{
+    display: block!important;
+}
+
+/*-- Course-search-detail --*/
+.course-content-container{
+    margin-top: 3rem;
+    padding: 2rem;
+    height: 100%;
+}
+
+/* Search input */
+.search-in-course-details{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.search-in-course-details h3{
+    margin: 0 0 .5rem 0;
+    color: var(--clr-dark);
+}
+
+.search-wrapper{
+    width: max-content;
+    background-color: var(--clr-lightblue);
+    display: flex;
+    flex-direction: row;
+    border-radius: .5rem;
+}
+
+.search-wrapper input[type="search"]{
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: .8rem 1rem;
+    border: 2px solid var(--clr-lightblue);
+    border-radius: .225rem 0 0 .225rem;
+}
+
+.course-search-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-inline: .5rem;
+    color: var(--clr-white);
+    cursor: pointer;
+}
+
+.back-search-button{
+    padding: 1rem;
+    border: none;
+    outline: transparent;
+    font-weight: var(--fw-700);
+    border-radius: var(--border-radius-xsml);
+    cursor: pointer;
+    background-color: var(--clr-lightblue);
+    color: var(--clr-white);
+}
+/* End of search input */
+
+.course-name-header-detail {
+    margin-top: 3rem;
+    height: 100%;
+}
+
+.course-name-header-detail h1{
+    color: var(--clr-dark);
+    font-size: 2.575rem;
+    margin: 0;
+}
+
+.course-detail-main-container{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.course-description-container p,
+.course-description-container h2{
+    font-weight: var(--fw-400)!important;
+    text-align: justify;
+    color: var(--clr-dark);
+}
+
+.course-description-container p{
+    opacity: .9;
+}
+
+.course-description-container h2{
+    font-weight: var(--fw-700)!important;
+    color: hsl(208, 97%, 27%);
+}
+
+.course-description-container{
+    border-radius: var(--border-radius-xsml);
+    padding: 1rem;
+    background-color: hsla(208, 84%, 90%, 0.1);
+    border: 1px solid var(--clr-lightblue);
+    box-shadow: var(--box-shadow);
+}

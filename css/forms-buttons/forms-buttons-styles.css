@@ -1,0 +1,81 @@
+@import url('../utilities.css');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300&display=swap');
+
+.form-controls{
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.form-controls input{ 
+    padding: .5rem 1rem;
+    outline: transparent;
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 1rem;
+}
+
+.form-controls input:focus{
+   border: 1px solid var(--clr-lightblue);
+}
+
+.form-controls label{
+    margin-bottom: .3rem;
+    color: var(--clr-dark);
+}
+
+.bg-form{
+    background-color: var(--clr-dark);
+}
+
+.fu-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 100;
+}
+
+.form-main{
+    padding: 2rem;
+    position: relative;
+}
+
+.bxl-xing{
+    position: absolute;
+    top: .5rem;
+    right: .5rem;
+    font-size: var(--fs-large);
+    color: var(--clr-dark);
+    cursor: pointer;
+}
+
+.form-header{
+    font-size: var(--fs-xl);
+    margin-bottom: 1rem;
+}
+
+textarea{
+    font-family: 'Roboto', sans-serif;
+    outline: transparent;
+}
+
+.button-controls{ 
+    padding: .8rem 2rem!important;
+    outline-color: transparent;
+    font-weight: var(--fw-700);
+    cursor: pointer;
+    font-family: 'Lato', sans-serif!important;
+    border-radius: var(--border-radius-xsml);
+    font-size: clamp(.5rem, .5rem + 5vw, .8rem);
+    box-shadow: var(--box-shadow);
+    letter-spacing: 0.025em;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none; 
+    margin: 0; 
+}

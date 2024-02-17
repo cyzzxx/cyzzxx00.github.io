@@ -1,0 +1,44 @@
+@import url('utilities.css');
+
+.user-request-section{
+    background-image: linear-gradient(280deg, rgba(244, 212, 249, 0.307),
+    rgba(199, 222, 252, 0.307), 
+    var(--clr-white), 
+    var(--clr-white), 
+    rgba(231, 254, 251, 0.652), 
+    var(--clr-white))!important;
+    padding: 0!important;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-direction: row;
+    position: relative;
+}
+
+.request-tool{
+    width: 90dvw;
+    padding: 2rem;
+    margin-top: 12rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100dvh;
+    transition: .3s all ease-in-out;
+
+
+    & h2{
+        color: var(--clr-dark);
+        font-size: clamp(1.5rem, 1rem + 5vw, 3rem);
+        letter-spacing: var(--ltr-spacing);
+        text-align: center;
+        margin: 0;
+    }
+
+    & span{
+        color: var(--clr-dark);
+        letter-spacing: var(--ltr-spacing);
+        text-align: center;
+        margin: 0;
+    }
+}

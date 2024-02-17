@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300&display=swap');
+
+/* CSS */
+*,
+*::before,
+*::after{
+    box-sizing: border-box!important;
+}
+            
+html{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+            
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+/* Custom scroll bar design */
+::-webkit-scrollbar{
+    width: .5rem;
+}
+            
+::-webkit-scrollbar-track{
+    background: rgb(255, 255, 255);
+}
+            
+::-webkit-scrollbar-thumb{
+    background: rgb(224, 224, 224);
+}
+            
+::-webkit-scrollbar-thumb:hover{
+    background: lightslategray;
+}
+
+.swal2-shown{
+    padding: 0!important;
+}
+            
+:root{
+    --clr-dark: hsl(210, 29%, 16%);
+    --clr-white: hsl(192, 15%, 99%);
+    --clr-lightblue: hsl(208, 99%, 36%);
+    --clr-deepblue: hsl(261, 100%, 16%);
+            
+    /* dark mode colours */
+    --dark-clr-dark: hsl(0, 0%, 10%);
+    --dark-clr-white: hsl(0, 0%, 90%);
+    --dark-clr-lightblue: hsl(208, 99%, 36%);
+    --dark-clr-deepblue: hsl(240, 100%, 10%);
+
+    --fw-300: 300;
+    --fw-400: 400;
+    --fw-500: 500;
+    --fw-700: 700;
+    
+    --fs-small: .825rem;
+    --fs-reg: 1rem;
+    --fs-large: 1.5rem;
+    --fs-xl: 2rem;
+    --fs-sxl: 3rem;
+            
+    --box-shadow: rgba(61, 60, 60, 0.331)0 2px 4px;
+            
+    --border-radius-xsml: .2rem;
+    --border-radius-sml: .5rem;
+    --border-radius: 1.5rem;
+
+    --border-clr:rgba(30, 30, 30, 0.100);
+}
+
+/* Loader */
+.loader{
+    max-height: auto;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loader img{
+    max-width: 100%;
+}
+
+/* Pseudo hr */
+.hr-divider:empty{ 
+    margin: 1rem 0;
+    height: .2rem;
+    width: 100%;
+    background: none;
+    border-bottom: 1px solid var(--clr-dark);
+}
+
+p{
+    font-weight: var(--fw-400)!important;
+    line-height: 150%;
+    letter-spacing: 0.025em;
+}
+
+a{
+    text-decoration: none;
+}

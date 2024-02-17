@@ -1,0 +1,21 @@
+@import url('utilities.css');
+
+.button {
+    position: relative;
+}
+
+/* Styles for the tooltip */
+.tooltip {
+    --tooltip-bg: hsla(0, 0%, 15%, 0.534);
+    display: none;
+    position: absolute;
+    background-color: var(--tooltip-bg);
+    color: var(--clr-white);
+    padding: 5px;
+    border-radius: var(--border-radius-sml);
+    width: 100%;
+    top: -50px; /* Adjust as needed to position the tooltip */
+    left: 50%;
+    transform: translateX(-50%);
+}
+

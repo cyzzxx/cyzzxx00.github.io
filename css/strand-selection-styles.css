@@ -1,0 +1,125 @@
+@import url('utilities.css');
+
+.strand-select-section{
+    height: 100%;
+    background-image: linear-gradient(280deg,
+    rgba(243, 223, 246, 0.307), 
+    rgba(217, 232, 251, 0.307), 
+    var(--clr-white), 
+    var(--clr-white), 
+    rgba(237, 251, 248, 0.41), 
+    var(--clr-white))!important;
+    padding: 2rem;
+    transition: .3s all ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.strand-select__headings-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.headings-container__margin-top{
+    margin-top: 5rem;
+    width: 100%;
+
+    & h1{
+        font-size: clamp(1.25rem, 1rem + 2vw, 3rem);
+        font-weight: var(--fw-700);
+        text-transform: capitalize;
+        color: var(--clr-dark);
+        margin: 0;
+    }
+
+    & h2{
+        font-size: clamp(.525rem, 1rem + 2vw, 1.5rem);
+        font-weight: var(--fw-500);
+        margin: .5rem 0 0 0;
+    }
+}
+
+.strand-selection__container{
+
+    & form{
+        padding: 0;
+
+        & h3{
+            margin: 1.5rem 0 0 0;
+            font-weight: var(--fw-500);
+        }   
+    }
+}
+
+.selection__button-container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+
+    & button{
+        width: 100%;
+        border: none;
+        border: 1px solid var(--clr-lightblue);
+        border-left: 4px solid var(--clr-lightblue);
+        border-radius: var(--border-radius-sml);
+        color: var(--clr-dark);
+        background-color: var(--clr-white);
+        text-align: left;
+        transition: .3s all ease-in-out;
+    }
+
+    & button:hover{
+        transform: translateX(-.5rem);
+    }
+}
+
+.buttons__display-none{
+    display: none;
+}
+
+.headings-container__instructions{
+    border-radius: .5rem;
+
+    & p{
+        margin-top: .2rem;
+    }
+}
+
+.headings-container__important-note{
+    border: 1px solid rgba(0, 255, 136, 0.647);
+    background-color: rgba(225, 253, 240, 0.155);
+    border-radius: var(--border-radius-sml);
+    padding: .8rem;
+    box-shadow: 0 1px 2px rgba(217, 232, 251, 0.307);
+
+    & h3{
+        color: var(--clr-dark);
+    }
+}
+
+.important-note--reminder{
+    font-weight: var(--fw-300);
+    opacity: .9;
+}
+
+.important-note--reminder-fw{
+    font-weight: var(--fw-500);
+    color: rgb(1, 42, 23);;
+}
+
+/* Media Query Breakpoint */
+@media (max-width: 450px){
+    .buttons__display-block{
+        display: none;
+    }
+
+    .buttons__display-none{
+        display: flex;
+    }
+}
+
+/* End of Media Query Breakpoint */

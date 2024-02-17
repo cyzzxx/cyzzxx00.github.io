@@ -1,0 +1,187 @@
+@import url('utilities.css');
+
+/* Assessment section */
+.assessment-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; 
+    background-image: linear-gradient(280deg,
+    rgba(243, 223, 246, 0.307), 
+    rgba(217, 232, 251, 0.307), 
+    var(--clr-white), 
+    var(--clr-white), 
+    rgba(237, 251, 248, 0.41), 
+    var(--clr-white))!important;
+    gap: 1rem;   
+    padding: 0 2rem 2rem;
+
+    position: relative;
+}
+
+.bxs-chevrons-up{
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    background-color: var(--clr-white);
+    font-size: 1.50rem;
+    color: var(--clr-lightblue);
+    border-radius: 50%;
+    box-shadow: var(--box-shadow);
+    padding: .2rem;
+    cursor: pointer;
+    transition: .2s ease;
+}
+
+.bxs-chevrons-up:hover{
+    transform: scale(1.1);
+    background-color: var(--clr-lightblue);
+    color: var(--clr-white);
+}
+
+.min-width__section{
+    width: min(100%, 60%);
+
+    & .hr-divider{
+        opacity: .5;
+    }
+}
+
+.section__headings{
+    width: 100%;
+    margin-top: 8rem;
+    font-size: var(--fs-xl);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+
+    & h1{
+        margin: 0;
+        color: var(--clr-dark);
+        font-size: clamp(2rem, 1rem + 5vw, 3rem);
+        font-weight: var(--fw-700);
+    }
+
+    & h4{
+        color: var(--clr-dark)!important;
+        font-size: clamp(.925rem, .8rem + 1vw, 1.25rem);
+        text-wrap: balance;
+        margin: 0;
+    }
+
+    & h3{
+        color: var(--clr-dark);
+        font-size: clamp(.725rem, 1rem + 2vw, 1rem);
+        font-weight: var(--fw-500);
+        margin: .5rem 0 0 0;
+    }
+}
+
+.section__assessment-content{
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.content__list{
+    background-color: var(--clr-white);
+    border: 1px solid rgba(35, 35, 35, 0.196);
+    border-left: 4px solid var(--clr-lightblue);
+    border-radius: var(--border-radius-xsml);
+    padding: 1rem;
+    margin-bottom: 1rem;
+    width: 100%;
+
+    & h3{
+        margin: 0;
+        color: var(--clr-dark);
+    }
+
+    & h3::first-letter{
+        color: orangered;
+        font-size: 2rem;
+    }
+
+    & .a-b-c-flexbox{
+        margin-top: .5rem;
+    }
+
+    & .hr-divider{
+        opacity: .2!important;
+    }
+}
+
+.radio-wrapper{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: .5rem;
+    margin-top: .5rem;
+    padding: .3rem;
+
+    & .radio-flex{
+        --border-clr-assessment: rgba(26, 26, 26, 0.16);
+        --radio-wrapper-bg-clr: hsl(61, 0%, 98%);
+        padding-block: .5rem; 
+        background-color: var(--radio-wrapper-bg-clr);
+        border: 1px solid var(--border-clr-assessment);
+        border-radius: 1rem;
+        padding: 1rem;
+        color: var(--clr-dark);
+        font-weight: var(--fw-700);
+        cursor: pointer;
+        transition: .2s all ease;
+
+        & input[type="radio"]{
+            cursor: pointer;
+        }
+    }
+
+    & .radio-flex:hover{
+        --radio-wrapper-bg-clr-hover: hsla(204, 70%, 53%, 0.344);
+        background-color: var(--radio-wrapper-bg-clr-hover);
+    }
+}
+
+.button-wrapper{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: row-reverse;
+    gap: 1rem;
+
+    & button{
+        max-width: 100%;
+        background-color: var(--clr-lightblue);
+        border: 1px solid var(--clr-lightblue);
+        transition: .2s all ease-in-out;
+        border-radius: var(--border-radius-sml);
+        color: var(--clr-white);
+        box-shadow: none;
+    }
+
+    & .button-controls__button-cancel{
+        --btn-cancel: hsl(6, 78%, 57%);
+        background-color: var(--btn-cancel)!important;
+        border: 1px solid var(--btn-cancel);
+        color: var(--clr-white)!important;
+    }
+}
+
+.assessment-content__page-b{
+    display: none;
+}
+
+@media (max-width: 700px){
+    .min-width__section{
+        width: 100%;
+    }
+}
+
+@media (max-width: 540px){
+    .button-wrapper{
+        width: max-content;
+    }
+}
